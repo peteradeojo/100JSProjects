@@ -1,0 +1,128 @@
+:root {
+	--base-font-size: 10px;
+	--theme-color: #8a2be2;
+	--min-margin: 10px;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 10px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+h1 {
+	font-size: calc(var(--base-font-size) * 4.1);
+}
+h2 {
+	font-size: calc(var(--base-font-size) * 3.3);
+}
+h3 {
+	font-size: calc(var(--base-font-size) * 2.8);
+}
+h4 {
+	font-size: calc(var(--base-font-size) * 2);
+}
+h5 {
+	font-size: calc(var(--base-font-size) * 1.6);
+}
+h6,
+p {
+	font-size: calc(var(--base-font-size) * 1.4);
+}
+li {
+	font-size: inherit;
+}
+/* Margins and Paddings */
+.m-1 {
+	margin: calc(var(--min-margin) * 1);
+}
+.m-2 {
+	margin: calc(var(--min-margin) * 2);
+}
+.m-3 {
+	margin: calc(var(--min-margin) * 3);
+}
+.m-4 {
+	margin: calc(var(--min-margin) * 4);
+}
+.m-5 {
+	margin: calc(var(--min-margin) * 5);
+}
+.ml-1 {
+	margin-left: calc(var(--min-margin) * 1);
+}
+.ml-2 {
+	margin-left: calc(var(--min-margin) * 1.5);
+}
+.ml-3 {
+	margin-left: calc(var(--min-margin) * 2);
+}
+.ml-4 {
+	margin-left: calc(var(--min-margin) * 2.5);
+}
+.ml-5 {
+	margin-left: calc(var(--min-margin) * 3);
+}
+.mr-1 {
+	margin-right: calc(var(--min-margin) * 1);
+}
+.mr-2 {
+	margin-right: calc(var(--min-margin) * 1.5);
+}
+.mr-3 {
+	margin-right: calc(var(--min-margin) * 2);
+}
+.mr-4 {
+	margin-right: calc(var(--min-margin) * 2.5);
+}
+.mr-5 {
+	margin-right: calc(var(--min-margin) * 3);
+}
+.mt-1 {
+	margin-top: calc(var(--min-margin) * 1);
+}
+.mt-2 {
+	margin-top: calc(var(--min-margin) * 1.5);
+}
+.mt-3 {
+	margin-top: calc(var(--min-margin) * 2);
+}
+.mt-4 {
+	margin-top: calc(var(--min-margin) * 2.5);
+}
+.mt-5 {
+	margin-top: calc(var(--min-margin) * 3);
+}
+
+/* Utilities */
+.container {
+	padding: 1em 2em;
+	margin: auto;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-basis: 12fr;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.bg-blue {
+	background-color: #8a2be2;
+}
+.bg-theme {
+	background-color: var(--theme-color);
+}
+.text-theme {
+	color: var(--theme-color);
+}
+.text-white {
+	color: #ffffff;
+}
+.text-center {
+	text-align: center;
+}
