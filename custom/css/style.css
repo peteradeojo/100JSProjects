@@ -13,22 +13,22 @@ body {
 	font-family: Comfortaa, Arial, Helvetica, sans-serif;
 	width: 100%;
 }
-h1 {
+.h1 {
 	font-size: calc(var(--base-font-size) * 4.1);
 }
-h2 {
+.h2 {
 	font-size: calc(var(--base-font-size) * 3.3);
 }
-h3 {
+.h3 {
 	font-size: calc(var(--base-font-size) * 2.8);
 }
-h4 {
+.h4 {
 	font-size: calc(var(--base-font-size) * 2);
 }
-h5 {
+.h5 {
 	font-size: calc(var(--base-font-size) * 1.6);
 }
-h6,
+.h6,
 p {
 	font-size: calc(var(--base-font-size) * 1.4);
 }
@@ -102,14 +102,6 @@ li {
 	padding: 1em 2em;
 	margin: auto;
 }
-.row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	flex-basis: 12fr;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
 
 .bg-blue {
 	background-color: #8a2be2;
@@ -125,4 +117,49 @@ li {
 }
 .text-center {
 	text-align: center;
+}
+
+/* Lists */
+ul.list {
+	list-style: none;
+	padding: 4px 6px;
+}
+.list .list-item {
+	padding: 8px 12px;
+	border: 1px solid #cccccc;
+}
+.list-item:nth-child(even) {
+	border-top: 0;
+	border-bottom: 0;
+}
+.list-item:last-child:not(:nth-child(odd)) {
+	border-bottom: 1px solid #cccccc;
+}
+.list-item:first-child {
+	border-radius: 4px 4px 0 0;
+}
+.list-item:last-child {
+	border-radius: 0 0 4px 4px;
+}
+.list-item:hover {
+	background-color: #edd;
+}
+
+/* Links */
+a {
+	color: inherit;
+}
+
+/* Buttons */
+.btn {
+	padding: 7px 11px;
+	border-radius: 4px;
+	border: 0;
+}
+.btn-theme {
+	background-color: #8a2be2;
+	color: #ffffff;
+}
+.btn:hover {
+	opacity: .9;
 }

@@ -1,4 +1,12 @@
 /* Responsive */
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-basis: 12fr;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
 .col-1 {
 	width: calc(100% / 12);
 }
@@ -15,7 +23,8 @@
 	width: calc((100% / 12) * 5);
 }
 .col-6 {
-	width: 50%;
+	/* width: 50%; */
+	width: calc((100% / 12) * 6);
 }
 .col-7 {
 	width: calc((100% / 12) * 7);
@@ -39,5 +48,6 @@
 @media only screen and (max-width: 568px) {
 	[class*='col-'] {
 		width: 100%;
+		padding: 10px;
 	}
 }

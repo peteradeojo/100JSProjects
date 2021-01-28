@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/custom/css/style.css" />
+		<link rel="stylesheet" href="/custom/css/responsive.css" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Changing Background</title>
+	</head>
+	<body>
+		<header class="bg-theme">
+			<div class="container">
+				<h1 class="h1 text-white text-center"><a href="/">#100JsProjects</a></h1>
+			</div>
+		</header>
+		<main class="mt-3">
+			<div class="container">
+				<h2 class="text-center h4 text-theme">Changing Page Background</h2>
+				<div id="display" class="mt-2">
+					<button id="changeBG" class="btn btn-theme">Change</button>
+				</div>
+				<p id="info" class="mt-1"></p>
+			</div>
+			<div class="container">
+				<h2 class="text-theme">Description</h2>
+				<p>This piece of code assigns random background colors to the pane above.</p>
+				<div class="code">
+					<button id="copy-code" class="btn">Copy</button>
+					<pre id="code">
+		// The JavaScript Code Below
+		const bgChanger = document.getElementById('changeBG');
+		const bgPane = document.getElementById('display');
+
+		const colors = ['red', 'blue', 'aliceblue', 'darkgreen', 'yellow', 'orange', 'pink'];
+		
+		bgChanger.addEventListener('click', () => {
+			const randomCol = Math.floor(Math.random() * colors.length);
+			document.getElementById('info').innerHTML = `Color ${randomCol + 1}: ${colors[randomCol]}`;
+			bgPane.style.backgroundColor = colors[randomCol];
+		});
+				</pre
+					>
+				</div>
+			</div>
+		</main>
+		<footer class="bg-theme mt-4">
+			<div class="container"></div>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
