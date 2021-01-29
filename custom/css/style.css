@@ -29,7 +29,8 @@ body {
 	font-size: calc(var(--base-font-size) * 1.6);
 }
 .h6,
-p {
+p,
+label {
 	font-size: calc(var(--base-font-size) * 1.4);
 }
 li {
@@ -99,7 +100,7 @@ li {
 
 /* Utilities */
 .container {
-	padding: 1em 2em;
+	padding: 16px;
 	margin: auto;
 }
 
@@ -161,5 +162,51 @@ a {
 	color: #ffffff;
 }
 .btn:hover {
-	opacity: .9;
+	opacity: 0.9;
+}
+
+/* Code Box */
+.code {
+	position: relative;
+	font-size: calc(var(--base-font-size) * 1.05);
+	margin-top: 15px;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 8px;
+	max-width: 100%;
+}
+.code pre {
+	max-width: 100%;
+	overflow-x: auto;
+}
+.code pre::-webkit-scrollbar {
+	background-color: #ddd;
+	height: 5px;
+	opacity: .4;
+}
+#copy-code {
+	position: relative;
+	left: 100%;
+	margin-left: -50px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	height: 25px;
+}
+
+/* Page footer */
+#directions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+code {
+	background-color: #eee;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-left: 2px;
+	margin-right: 2px;
+	font-family: 'Courier New', Courier, monospace;
+	border-radius: 2px;
 }

@@ -1,0 +1,18 @@
+label#file-label {
+	padding: 6px;
+	display: block;
+	background-color: red;
+	width: 100px;
+	margin-bottom: 10px;
+	color: #fff;
+	border-radius: 4px;
+}
+label#file-label:hover {
+	background-color: rgba(255, 0, 0, .8);
+}
+input#file {
+	display: none;
+}
+#file-info p {
+	margin-bottom: 5px;
+}

@@ -13,21 +13,3 @@ button#changeBG {
 	margin-left: -50px;
 	margin-top: -25px;
 }
-.code {
-	position: relative;
-	font-size: calc(var(--base-font-size)*1.05);
-	margin-top: 15px;
-	background-color: #000000;
-	color: #ffffff;
-	padding: 8px;
-	max-width: 100%;
-}
-.code pre {
-	max-width: 100%;
-	/* overflow: hidden; */
-}
-#copy-code {
-	position: absolute;
-	right: 10px;
-	top: auto;
-}

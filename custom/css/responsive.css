@@ -44,6 +44,9 @@
 .col-12 {
 	width: 100%;
 }
+[class*="col-"] {
+	padding-right: 2.4%;
+}
 
 @media only screen and (max-width: 568px) {
 	[class*='col-'] {
