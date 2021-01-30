@@ -1,0 +1,17 @@
+#display {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#display p#info{
+	font-size: 2em;
+	margin: 10px 0 10px 0;
+}
+p#info::before {
+	content: 'HEX: #';
+}
+#display .btn {
+	width: 80px;
+}

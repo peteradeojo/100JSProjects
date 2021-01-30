@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/custom/css/responsive.css" />
+		<link rel="stylesheet" href="/custom/css/style.css" />
+		<link rel="stylesheet" href="index.css" />
+		<title>#100JsProjects</title>
+	</head>
+	<body>
+		<header class="bg-theme">
+			<div class="container text-center text-white">
+				<h1 class="h1"><a href="/">#100JsProjets</a></h1>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<h2 class="h4 text-center text-theme">Using Random Hex Values</h2>
+				<div id="display" class="mt-3">
+					<p id="info">FFFFFF</p>
+					<button id="changeBG" class="btn btn-theme">Change</button>
+				</div>
+			</div>
+			<div class="container">
+				<h2 class="h4 text-theme">Description</h2>
+				<p>This code snippet uses an array of values that make up a Hex value to generate random hex values and setting the CSS <code>background-color</code> property as the newly generated hex value.</p>
+				<div class="code">
+					<button id="copy-code" class="btn">Copy</button>
+					<pre id="code">
+			// Arrow function
+			const generateRandomHexes = () => {
+				// Create Array of valid hex values
+				const values = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+
+				let hex = ''; // Initialize empty hex value
+
+				// fill hex value with 6 random characters
+				for (let i = 0; i < 6; i += 1) {
+					let x = Math.floor(Math.random() * 16);
+					hex += `${values[x]}`;
+				}
+
+				// Assign hex value
+				elem.style.backgroundColor = `#${hex}`;
+			};
+					</pre>
+				</div>
+			</div>
+		</main>
+		<footer class="mt-4">
+			<div id="directions" class="container">
+				<a href="/file-upload-details/" class="btn btn-theme">Previous</a>
+				<!-- <a href="/" class="btn btn-theme">Next</a> -->
+			</div>
+			<div class="bg-theme">
+				<div class="container">
+					<p class="text-center text-white">Copyright &copy; 2021</p>
+				</div>
+			</div>
+		</footer>
+		<script src="/custom/js/main.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

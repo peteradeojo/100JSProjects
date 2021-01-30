@@ -7,3 +7,7 @@
 - Created, completed and committed project 'file-upload-details' to repo
 - Added new styling and generalized useful ones
 - Customized code box scrollbar to appear on smaller devices (bug fix)
+
+## Day 3 - 30/01/2021
+- Created, completed and committed project 'random-hex-values' to repo
+- Noticing increase in problem solving time
