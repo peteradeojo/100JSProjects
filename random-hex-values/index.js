@@ -9,4 +9,5 @@ const generateRandomHexes = () => {
 	document.getElementById('info').innerHTML = hex.toUpperCase();
 };
 
+document.addEventListener('DOMContentLoaded', generateRandomHexes);
 document.getElementById('changeBG').addEventListener('click', generateRandomHexes);
